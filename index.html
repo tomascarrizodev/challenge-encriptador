@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <a href="https://www.aluracursos.com/" target="_blank"><img src="./assets/logo.png" alt="Logo de Alura" title="Alura Latam - Cursos"></a>
+    </header>
+
+    <main>
+        <div id="input-container">
+            <div class="support-btns">
+                <button id="pegar"><svg height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon style="fill:#CEE8FA;" points="280.608,247.082 410.28,247.082 410.28,123.527 337.197,123.527 337.197,156.085 87.722,156.085 87.722,123.527 14.639,123.527 14.639,430.728 280.608,430.728 "></polygon> <polygon style="fill:#CEE8FA;" points="414.534,247.082 412.448,247.082 412.448,324.299 495.959,324.299 "></polygon> </g> <path style="fill:#2D527C;" d="M497.361,363c-8.084,0-14.639,6.554-14.639,14.639v99.451H295.248v-46.36V261.724h102.563v62.577 c0,8.085,6.555,14.639,14.639,14.639h83.51c5.992,0,11.377-3.651,13.598-9.217c2.219-5.566,0.823-11.922-3.525-16.044l-81.111-76.92 V123.527c0-8.085-6.555-14.639-14.639-14.639h-58.446V92.343c0-8.085-6.555-14.639-14.639-14.639h-52.668 c-8.084,0-14.639,6.554-14.639,14.639c0,8.085,6.555,14.639,14.639,14.639h38.029v16.545v17.919H102.362v-17.919v-16.545h38.027 c8.084,0,14.639-6.554,14.639-14.639c0-31.668,25.764-57.431,57.431-57.431c15.804,0,30.531,6.286,41.47,17.7 c5.594,5.838,14.861,6.034,20.698,0.439c5.837-5.594,6.034-14.86,0.441-20.698c-16.513-17.23-38.748-26.719-62.609-26.719 c-42.825,0-78.498,31.204-85.473,72.07H87.723c-8.084,0-14.639,6.554-14.639,14.639v16.545H14.639 C6.555,108.888,0,115.442,0,123.527v307.201c0,8.085,6.555,14.639,14.639,14.639h251.332v46.36c0,8.085,6.555,14.639,14.639,14.639 h216.752c8.084,0,14.639-6.554,14.639-14.639V377.639C512,369.554,505.445,363,497.361,363z M427.087,309.66v-30.499l32.162,30.499 H427.087z M29.278,416.089V138.166h43.807v17.919c0,8.085,6.555,14.639,14.639,14.639h249.474c8.084,0,14.639-6.554,14.639-14.639 v-17.919h43.807v94.277H280.609c-8.084,0-14.639,6.554-14.639,14.639l0,0v169.006H29.278V416.089z"></path> </g></svg></button>
+                <button id="limpiar"><svg fill="#6093d4" width="30px" height="30px" viewBox="0 0 1024 1024" t="1569683368540" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9723" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#6093d4"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style type="text/css"></style></defs><path d="M899.1 869.6l-53-305.6H864c14.4 0 26-11.6 26-26V346c0-14.4-11.6-26-26-26H618V138c0-14.4-11.6-26-26-26H432c-14.4 0-26 11.6-26 26v182H160c-14.4 0-26 11.6-26 26v192c0 14.4 11.6 26 26 26h17.9l-53 305.6c-0.3 1.5-0.4 3-0.4 4.4 0 14.4 11.6 26 26 26h723c1.5 0 3-0.1 4.4-0.4 14.2-2.4 23.7-15.9 21.2-30zM204 390h272V182h72v208h272v104H204V390z m468 440V674c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v156H416V674c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v156H202.8l45.1-260H776l45.1 260H672z" p-id="9724"></path></g></svg></button>
+            </div>
+            <textarea name="input" id="textarea" cols="30" rows="12" placeholder="Ingrese el texto aquí"></textarea>
+            <p id="info">&#128712; Solo letras minúsculas y sin acentos</p>
+            <div class="buttons-container">
+                <button id="btn-encriptar">Encriptar</button>
+                <button id="btn-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="copypaste-container">
+            <button id="btn-copypaste"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/><path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z"/></svg></button>
+        </div>
+        <div class="answer-container">
+            <img id="boy" src="./assets/boy.png" alt="Sin resultados">
+            <p class="no-mensaje">Ningún mensaje fue encontrado</p>
+            <span class="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar</span>
+            <p id="respuesta"></p>
+            <button id="btn-copiar">Copiar</button>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

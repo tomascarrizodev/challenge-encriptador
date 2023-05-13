@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --l-blue-100: #f3f5fc;
+    --l-blue-200: #eff1fa;
+    --l-blue-300: #e9ecf8;
+    --l-blue-400: #aab2d5;
+    --l-blue-500: #757fb2;
+    --d-blue-100: #6093d4;
+    --d-blue-200: #3563a9;
+    --d-blue-300: #0a3871;
+    --d-blue-400: #072b61;
+    --d-blue-500: #052051;
+    --grey-100: #ced4da;
+    --grey-200: #adb5bd;
+    --grey-300: #868e96;
+    --grey-400: #495057;
+    --grey-500: #343a40;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--l-blue-100);
+}
+
+header {
+    padding: 1.3rem 1.5rem;
+    width: 100%;
+}
+
+header a {
+    transition: all .5s;
+}
+
+header a:hover {
+    filter: brightness(2);
+}
+
+header img {
+    width: 2rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+#textarea {
+    width: 100%;
+    resize: none;
+    font-size: 1.5rem;
+    color: var(--d-blue-300);
+    background-color: transparent;
+    border: none;
+}
+
+#textarea::placeholder {
+    color: var(--l-blue-500);
+}
+
+#textarea:focus {
+    outline: 0 none;
+}
+
+#info {
+    color: var(--grey-400);
+    font-size: .7rem;
+}
+
+.support-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.copypaste-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-copypaste svg{
+    fill: var(--d-blue-100);
+    transform: rotate(90deg) scale(2);
+}
+
+#pegar, #limpiar, #btn-copypaste {
+    border: none;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    transition: all .5s;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+
+#pegar:hover, #limpiar:hover, #btn-copypaste:hover {
+    background-color: #6093d433;
+}
+
+#pegar:active, #limpiar:active, #btn-copypaste:active {
+    background-color: #6093d4cc;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1.5rem .2rem;
+}
+
+.buttons-container button {
+    padding: 1.2rem 0;
+    border: none;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+#btn-encriptar {
+    background-color: var(--d-blue-300);
+    color: white;
+    transition: all .5s;
+}
+
+#btn-encriptar:hover {
+    background-color: var(--d-blue-400);
+}
+
+#btn-encriptar:active {
+    background-color: var(--d-blue-500);
+}
+
+button#btn-desencriptar {
+    background-color: transparent;
+    color: var(--d-blue-300);
+    border: 1px solid var(--d-blue-300);
+    transition: all .5s;
+}
+
+button#btn-desencriptar:hover {
+    background-color: var(--l-blue-300);
+}
+
+button#btn-desencriptar:active {
+    background-color: var(--l-blue-400);
+}
+
+.answer-container {
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 24px 32px -8px #0002;
+    margin: 1.5rem 0;
+}
+
+.no-mensaje {
+    font-weight: 700;
+    color: var(--grey-500);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.ingresa-texto {
+    color: var(--grey-400);
+}
+
+#respuesta {
+    text-align: left;
+    font-size: 1.25rem;
+    color: var(--grey-400);
+    line-height: 2rem;
+    overflow-wrap: break-word;
+}
+
+#boy {
+    display: none;
+}
+
+#btn-copiar {
+    margin-top: 2rem;
+    color: var(--d-blue-300);
+    border: 1px solid var(--d-blue-300);
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    display: none;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#btn-copiar:hover {
+    background-color: #aab2d533;
+}
+#btn-copiar:active {
+    background-color: #aab2d5cc;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    header {
+        margin-bottom: 3rem; 
+        width: auto;
+    }
+
+    header img {
+        width: 2rem;
+    }
+
+    #textarea {
+        font-size: 2rem;
+    }
+
+    .buttons-container {
+        flex-direction: row;
+    }
+
+    .buttons-container button {
+        width: 50%;
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        height: 100vh;
+    }
+
+    #btn-copypaste svg{
+        transform: rotate(0) scale(2);
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        width: 100%;
+    }
+
+    #input-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #textarea {
+        margin-top: 5%;
+    }
+
+    #info {
+        margin-top: auto;
+    }
+
+    .answer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+    }
+
+    #boy {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #respuesta {
+        overflow-y: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        padding: 2rem 4rem;
+    }
+
+    header {
+        width: 20%;
+    }
+    main {
+        width: 80%;
+    }
+}
