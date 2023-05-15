@@ -14,39 +14,73 @@
 </head>
 
 <body>
+    <div class="container">
 
-    <header>
-        <a href="https://www.aluracursos.com/" target="_blank"><img src="./assets/logo.png" alt="Logo de Alura" title="Alura Latam - Cursos"></a>
-    </header>
 
-    <main>
-        <div id="input-container">
-            <div class="support-btns">
-                <button id="pegar"><svg height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon style="fill:#CEE8FA;" points="280.608,247.082 410.28,247.082 410.28,123.527 337.197,123.527 337.197,156.085 87.722,156.085 87.722,123.527 14.639,123.527 14.639,430.728 280.608,430.728 "></polygon> <polygon style="fill:#CEE8FA;" points="414.534,247.082 412.448,247.082 412.448,324.299 495.959,324.299 "></polygon> </g> <path style="fill:#2D527C;" d="M497.361,363c-8.084,0-14.639,6.554-14.639,14.639v99.451H295.248v-46.36V261.724h102.563v62.577 c0,8.085,6.555,14.639,14.639,14.639h83.51c5.992,0,11.377-3.651,13.598-9.217c2.219-5.566,0.823-11.922-3.525-16.044l-81.111-76.92 V123.527c0-8.085-6.555-14.639-14.639-14.639h-58.446V92.343c0-8.085-6.555-14.639-14.639-14.639h-52.668 c-8.084,0-14.639,6.554-14.639,14.639c0,8.085,6.555,14.639,14.639,14.639h38.029v16.545v17.919H102.362v-17.919v-16.545h38.027 c8.084,0,14.639-6.554,14.639-14.639c0-31.668,25.764-57.431,57.431-57.431c15.804,0,30.531,6.286,41.47,17.7 c5.594,5.838,14.861,6.034,20.698,0.439c5.837-5.594,6.034-14.86,0.441-20.698c-16.513-17.23-38.748-26.719-62.609-26.719 c-42.825,0-78.498,31.204-85.473,72.07H87.723c-8.084,0-14.639,6.554-14.639,14.639v16.545H14.639 C6.555,108.888,0,115.442,0,123.527v307.201c0,8.085,6.555,14.639,14.639,14.639h251.332v46.36c0,8.085,6.555,14.639,14.639,14.639 h216.752c8.084,0,14.639-6.554,14.639-14.639V377.639C512,369.554,505.445,363,497.361,363z M427.087,309.66v-30.499l32.162,30.499 H427.087z M29.278,416.089V138.166h43.807v17.919c0,8.085,6.555,14.639,14.639,14.639h249.474c8.084,0,14.639-6.554,14.639-14.639 v-17.919h43.807v94.277H280.609c-8.084,0-14.639,6.554-14.639,14.639l0,0v169.006H29.278V416.089z"></path> </g></svg></button>
-                <button id="limpiar"><svg fill="#6093d4" width="30px" height="30px" viewBox="0 0 1024 1024" t="1569683368540" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9723" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#6093d4"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style type="text/css"></style></defs><path d="M899.1 869.6l-53-305.6H864c14.4 0 26-11.6 26-26V346c0-14.4-11.6-26-26-26H618V138c0-14.4-11.6-26-26-26H432c-14.4 0-26 11.6-26 26v182H160c-14.4 0-26 11.6-26 26v192c0 14.4 11.6 26 26 26h17.9l-53 305.6c-0.3 1.5-0.4 3-0.4 4.4 0 14.4 11.6 26 26 26h723c1.5 0 3-0.1 4.4-0.4 14.2-2.4 23.7-15.9 21.2-30zM204 390h272V182h72v208h272v104H204V390z m468 440V674c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v156H416V674c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v156H202.8l45.1-260H776l45.1 260H672z" p-id="9724"></path></g></svg></button>
+        <header>
+            <a href="https://www.aluracursos.com/" target="_blank"><img src="./assets/logo.png" alt="Logo de Alura"
+                    title="Alura Latam - Cursos"></a>
+        </header>
+
+        <main>
+            <div id="input-container">
+                <div class="support-btns">
+                    <button id="pegar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#6093D4"
+                                d="M160 0c-23.7 0-44.4 12.9-55.4 32H48C21.5 32 0 53.5 0 80V400c0 26.5 21.5 48 48 48H192V176c0-44.2 35.8-80 80-80h48V80c0-26.5-21.5-48-48-48H215.4C204.4 12.9 183.7 0 160 0zM272 128c-26.5 0-48 21.5-48 48V448v16c0 26.5 21.5 48 48 48H464c26.5 0 48-21.5 48-48V243.9c0-12.7-5.1-24.9-14.1-33.9l-67.9-67.9c-9-9-21.2-14.1-33.9-14.1H320 272zM160 40a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                        </svg>
+                        <p>Pegar</p>
+                    </button>
+                    <button id="limpiar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="#6093D4"
+                                d="M290.7 57.4L57.4 290.7c-25 25-25 65.5 0 90.5l80 80c12 12 28.3 18.7 45.3 18.7H288h9.4H512c17.7 0 32-14.3 32-32s-14.3-32-32-32H387.9L518.6 285.3c25-25 25-65.5 0-90.5L381.3 57.4c-25-25-65.5-25-90.5 0zM297.4 416H288l-105.4 0-80-80L227.3 211.3 364.7 348.7 297.4 416z" />
+                        </svg>
+                        <p>Limpiar</p>
+                    </button>
+                </div>
+                <textarea name="input" id="textarea" cols="30" rows="12" placeholder="Ingrese el texto aquí"></textarea>
+                <p id="info">&#128712; Solo letras minúsculas y sin acentos</p>
+                <div class="buttons-container">
+                    <button id="btn-encriptar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="#ffffff"
+                                d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+                        </svg><span>Encriptar</span>
+                    </button>
+                    <button id="btn-desencriptar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#0a3871"
+                                d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z" />
+                        </svg>
+                        <span>Desencriptar</span>
+                    </button>
+                </div>
             </div>
-            <textarea name="input" id="textarea" cols="30" rows="12" placeholder="Ingrese el texto aquí"></textarea>
-            <p id="info">&#128712; Solo letras minúsculas y sin acentos</p>
-            <div class="buttons-container">
-                <button id="btn-encriptar">Encriptar</button>
-                <button id="btn-desencriptar">Desencriptar</button>
+            <div class="copypaste-container">
+                <button id="btn-copypaste">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="#6093D4"
+                            d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z" />
+                    </svg>
+                    <p>Copiar y pegar</p>
+                </button>
             </div>
-        </div>
-        <div class="copypaste-container">
-            <button id="btn-copypaste"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/><path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z"/></svg></button>
-        </div>
-        <div class="answer-container">
-            <img id="boy" src="./assets/boy.png" alt="Sin resultados">
-            <p class="no-mensaje">Ningún mensaje fue encontrado</p>
-            <span class="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar</span>
-            <p id="respuesta"></p>
-            <button id="btn-copiar">Copiar</button>
-        </div>
-    </main>
+            <div class="answer-container">
+                <img id="boy" src="./assets/boy.png" alt="Sin resultados">
+                <p class="no-mensaje">Ningún mensaje fue encontrado</p>
+                <span class="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar</span>
+                <p id="respuesta"></p>
+                <button id="btn-copiar">Copiar</button>
+            </div>
+        </main>
 
+    </div>
     <footer>
 
     </footer>
+
 
     <script src="./app.js"></script>
 </body>

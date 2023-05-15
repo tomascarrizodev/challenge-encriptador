@@ -88,7 +88,7 @@ main {
 
 #btn-copypaste svg{
     fill: var(--d-blue-100);
-    transform: rotate(90deg) scale(2);
+    transform: rotate(-90deg);
 }
 
 #pegar, #limpiar, #btn-copypaste {
@@ -100,6 +100,9 @@ main {
     cursor: pointer;
 }
 
+#btn-copypaste p {
+    margin-top: .8rem;
+}
 
 #pegar:hover, #limpiar:hover, #btn-copypaste:hover {
     background-color: #6093d433;
@@ -206,7 +209,7 @@ button#btn-desencriptar:active {
 }
 
 @media (min-width: 768px) {
-    body {
+    .container {
         padding: 1rem;
     }
 
@@ -234,13 +237,25 @@ button#btn-desencriptar:active {
 }
 
 @media (min-width: 1024px) {
-    body {
+    .container {
         display: flex;
         height: 100vh;
     }
 
+    #btn-encriptar, #btn-desencriptar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #btn-encriptar svg, #btn-desencriptar svg {
+        width: 1rem;
+        margin-right: .5rem;
+    }
+
     #btn-copypaste svg{
-        transform: rotate(0) scale(2);
+        transform: rotate(-180deg);
+        width: 3rem;
     }
 
     main {
