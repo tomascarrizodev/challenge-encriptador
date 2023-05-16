@@ -101,6 +101,10 @@ main {
     cursor: pointer;
 }
 
+#pegar path, #limpiar path, #btn-copypaste path {
+    fill: var(--d-blue-100);
+}
+
 #btn-copypaste p {
     margin-top: .8rem;
 }
@@ -136,6 +140,10 @@ main {
 #btn-encriptar svg, #btn-desencriptar svg, #btn-copiar svg {
     width: 1rem;
     margin-right: .5rem;
+}
+
+#btn-copiar path {
+    fill: var(--d-blue-300);
 }
 
 #btn-encriptar {
@@ -218,6 +226,25 @@ button#btn-desencriptar:active {
 }
 #btn-copiar:active {
     background-color: #aab2d5cc;
+}
+
+footer {
+    background: var(--d-blue-500);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.img-container {
+    padding: 1rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    filter: invert();
+    width: 1.5rem;
 }
 
 @media (min-width: 768px) {
