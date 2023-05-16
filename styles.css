@@ -242,9 +242,18 @@ footer {
     justify-content: space-between;
 }
 
+footer a {
+    cursor: pointer;
+}
+
 footer img {
     filter: invert();
     width: 1.5rem;
+    transition: .3s;
+}
+
+footer img:hover {
+    opacity: .7;
 }
 
 @media (min-width: 768px) {
