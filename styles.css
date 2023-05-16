@@ -89,6 +89,7 @@ main {
 #btn-copypaste svg{
     fill: var(--d-blue-100);
     transform: rotate(-90deg);
+    width: 2.5rem;
 }
 
 #pegar, #limpiar, #btn-copypaste {
@@ -124,6 +125,17 @@ main {
     border: none;
     border-radius: 1.2rem;
     cursor: pointer;
+}
+
+#btn-encriptar, #btn-desencriptar, #btn-copiar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-encriptar svg, #btn-desencriptar svg, #btn-copiar svg {
+    width: 1rem;
+    margin-right: .5rem;
 }
 
 #btn-encriptar {
