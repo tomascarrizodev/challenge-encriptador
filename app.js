@@ -31,11 +31,22 @@ const recipe = [['a', 'ai'], ['e', 'enter'], ['i', 'imes'], ['o', 'ober'], ['u',
 //! funciones
 function toggleElements(value) {
     let toggle
-    value == true ? toggle = 'display: none;' : toggle = 'display: block;';
+    value == true 
+        ? toggle = 'display: none;' 
+        : toggle = 'display: block;';
+    
     noMensajeAviso.style = toggle
     ingresaTextoAviso.style = toggle
     if (screen.width >= 1024) {
         boyImage.style = toggle
+    }
+}
+
+function toggleBoyImage() {
+    if (screen.width < 1024) {
+        boyImage.style = 'display: none'
+    } else if (screen.width >= 1024 && respuesta.innerHTML == '' ) {
+        boyImage.style = 'display: block'
     }
 }
 
@@ -152,13 +163,7 @@ function copiarPegarTexto() {
 
 //! eventos
 
-window.addEventListener('resize', () => {
-    if (screen.width < 1024) {
-        boyImage.style = 'display: none'
-    } else {
-        boyImage.style = 'display: block'
-    }
-})
+window.addEventListener('resize', toggleBoyImage)
 
 btnPegar.addEventListener('click', pegarTexto)
 btnLimpiar.addEventListener('click', limpiarTexto)

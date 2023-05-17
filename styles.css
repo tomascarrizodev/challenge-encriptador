@@ -231,7 +231,6 @@ button#btn-desencriptar:active {
 footer {
     background: var(--d-blue-500);
     color: #fff;
-    font-weight: bold;
     text-align: center;
     padding: 2rem 0;
 }
@@ -247,7 +246,6 @@ footer a {
 }
 
 footer img {
-    filter: invert();
     width: 1.5rem;
     transition: .3s;
 }
@@ -281,6 +279,10 @@ footer img:hover {
     .buttons-container button {
         width: 50%;
         padding: 1.5rem;
+    }
+
+    .img-container {
+        justify-content: space-evenly;
     }
 }
 
@@ -340,6 +342,11 @@ footer img:hover {
 
     #respuesta {
         overflow-y: auto;
+    }
+
+    .img-container {
+        justify-content: center;
+        gap: 2rem;
     }
 }
 
