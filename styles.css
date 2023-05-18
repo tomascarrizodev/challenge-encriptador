@@ -142,7 +142,11 @@ main {
     margin-right: .5rem;
 }
 
-#btn-copiar path {
+#btn-encriptar path {
+    fill: #fff;
+}
+
+#btn-desencriptar path, #btn-copiar path {
     fill: var(--d-blue-300);
 }
 
@@ -206,6 +210,7 @@ button#btn-desencriptar:active {
 
 #boy {
     display: none;
+    margin: 0 auto;
 }
 
 #btn-copiar {
@@ -226,6 +231,62 @@ button#btn-desencriptar:active {
 }
 #btn-copiar:active {
     background-color: #aab2d5cc;
+}
+
+.alertas-container {
+    position: relative;
+}
+
+.alerta {
+    position: absolute;
+    top: -5.7rem;
+    right: 0rem;
+    background-color: var(--l-blue-300);
+    padding: .5rem 1rem;
+    width: 100%;
+    border-radius: .5rem;
+    font-size: 12px;
+    display: none;
+    flex-direction: column;
+}
+
+.alerta > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.alerta p {
+    width: 80%;
+}
+
+.alerta svg {
+    width: 2rem;
+}
+
+.alerta path {
+    fill: var(--d-blue-300);
+}
+
+.btn-dejar-ver {
+    margin-top: .5rem;
+    margin-left: auto;
+    align-self: flex-end;
+    border: 1px solid var(--d-blue-300);
+    background-color: var(--l-blue-200);
+    padding: .2rem .4rem;
+    border-radius: .4rem;
+    font-size: 11px;
+    color: var(--d-blue-300);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.btn-dejar-ver:hover {
+    background-color: var(--l-blue-300);
+}
+
+.btn-dejar-ver:active {
+    background-color: var(--l-blue-400);
 }
 
 footer {
@@ -284,6 +345,11 @@ footer img:hover {
     .img-container {
         justify-content: space-evenly;
     }
+
+    .alerta {
+        width: 50vw;
+        top: -9rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -336,6 +402,7 @@ footer img:hover {
     }
 
     #boy {
+        display: block;
         width: 80%;
         margin: 0 auto;
     }
@@ -347,6 +414,11 @@ footer img:hover {
     .img-container {
         justify-content: center;
         gap: 2rem;
+    }
+
+    .alerta {
+        top: 0;
+        left: 0;
     }
 }
 
