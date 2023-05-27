@@ -102,7 +102,7 @@ main {
 }
 
 #pegar path, #limpiar path, #btn-copypaste path {
-    fill: var(--d-blue-100);
+    fill: var(--d-blue-300);
 }
 
 #btn-copypaste p {
